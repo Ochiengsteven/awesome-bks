@@ -13,7 +13,7 @@ const displayBooks = () => {
       <div class="book-plate">
         <p>${book.name}</p>
         <p>${book.author}</p>
-        <button class="delete-btn" data="${book.id}">Remove</button>
+        <button class="delete-btn" onClick= "removeBook('${book.id}')">Remove</button>
       </div>`;
   });
 };
@@ -46,20 +46,14 @@ form.addEventListener('submit', (e) => {
 });
 
 // Remove a book
+// eslint-disable-next-line no-unused-vars
 const removeBook = (id) => {
+  // Convert the id to a number
+  const bookId = Number(id);
+
   // Filter the bookData array
-  bookData = bookData.filter((book) => book.id !== id);
+  bookData = bookData.filter((book) => book.id !== bookId);
 
   // Display the books
   displayBooks();
 };
-
-// book remove Event delegation
-const removeBtns = document.querySelectorAll('.delete-btn');
-
-removeBtns.forEach((removeBtn) => {
-  removeBtn.addEventListener('click', (event) => {
-    const { id } = event.target.dataset; // Retrieve the `id` property specifically
-    removeBook(id);
-  });
-});
