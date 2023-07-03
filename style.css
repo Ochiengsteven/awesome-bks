@@ -37,3 +37,12 @@ button {
     cursor: pointer;
     width: 30%;
 }
+
+.book-plate {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
