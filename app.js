@@ -16,6 +16,9 @@ const displayBooks = () => {
         <button class="delete-btn" onClick= "removeBook('${book.id}')">Remove</button>
       </div>`;
   });
+
+  // Store the updated bookData array in local storage
+  localStorage.setItem('bookData', JSON.stringify(bookData));
 };
 
 form.addEventListener('submit', (e) => {
@@ -41,8 +44,6 @@ form.addEventListener('submit', (e) => {
 
   // Display the books
   displayBooks();
-  console.log('Form submitted!');
-  console.log(bookData);
 });
 
 // Remove a book
@@ -56,4 +57,18 @@ const removeBook = (id) => {
 
   // Display the books
   displayBooks();
+
+  // Update the local storage after removing the book
+  localStorage.setItem('bookData', JSON.stringify(bookData));
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the existing data from local storage (if any)
+  const storedBookData = localStorage.getItem('bookData');
+
+  // If there's any data, parse it and assign it to bookData
+  if (storedBookData) {
+    bookData = JSON.parse(storedBookData);
+    displayBooks(); // Display the books from the local storage data
+  }
+});
