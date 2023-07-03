@@ -46,3 +46,7 @@ button {
     gap: 10px;
     border-bottom: 1px solid #ccc;
 }
+
+.book-plate p{
+  font-weight: bold;
+}
