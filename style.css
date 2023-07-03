@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 2%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    gap: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    width: 30%;
+}
