@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable max-classes-per-file */
 // Create a book object
 class Book {
@@ -92,3 +93,33 @@ class BookCollection {
 // Create an instance of the BookCollection class
 // eslint-disable-next-line no-unused-vars
 const bookCollection = new BookCollection();
+
+// handle page link clicks
+
+const homeLink = document.getElementById('home-link');
+const addLink = document.getElementById('add-link');
+const contactLink = document.getElementById('contact-link');
+
+document.addEventListener('DOMContentLoaded', () => {
+  homeLink.style.display = 'block';
+  addLink.style.display = 'none';
+  contactLink.style.display = 'none';
+});
+
+const homeClick = () => {
+  homeLink.style.display = 'block';
+  addLink.style.display = 'none';
+  contactLink.style.display = 'none';
+};
+
+const addClick = () => {
+  homeLink.style.display = 'none';
+  addLink.style.display = 'block';
+  contactLink.style.display = 'none';
+};
+
+const contactClick = () => {
+  homeLink.style.display = 'none';
+  addLink.style.display = 'none';
+  contactLink.style.display = 'block';
+};

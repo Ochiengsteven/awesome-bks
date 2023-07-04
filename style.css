@@ -9,10 +9,49 @@ body {
   height: 100vh;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: solid 3px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+  border-right: 2px solid black;
+}
+
 h1 {
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding: 0 0 10px 10px;
   margin-top: 10px;
+  text-align: center;
+}
+
+.landing-pg {
   text-align: center;
 }
 
@@ -105,4 +144,47 @@ h2 {
   border-color: black;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-top: 20vh;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-left: 30vw;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-info ul {
+  margin-left: 32vw;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+.contact-info ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
 }

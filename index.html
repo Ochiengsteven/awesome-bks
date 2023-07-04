@@ -8,12 +8,20 @@
 </head>
 <body>
     <nav>
-        <h1 class="logo">All awesome books</h1>
+        <h1 class="logo">Awesome books</h1>
+        <ul class="nav-links">
+            <li><a href="#books-container" onclick="homeClick()">List</a></li>
+            <li><a href="#add-form" onclick="addClick()">Add new</a></li>
+            <li><a href="#contact-form" onclick="contactClick()">Contact</a></li>
+        </ul>
     </nav>
     <main>
-        <section class="books" id="books-container"></section>
+        <section class="landing-pg" id="home-link">
+            <h2 class="title">All awesome books</h2>
+            <div class="books" id="books-container"></div>
+        </section>
         <hr>
-        <section class="add-new-books">
+        <section class="add-new-books" id="add-link">
             <h2>Add a new book</h2>
             <div class="form" id="add-form">
                 <form action="" id="submit-form">
@@ -23,8 +31,22 @@
                 </form>
             </div>
         </section>
+        <section class="contact-info" id="contact-link">
+            <h2>Contact information</h2>
+            <div class="form" id="contact-form">
+                <p>Do you have any questions or you just want to say "Hello"?</p>
+                <p>You can reach out to us!</p>
+                <ul>
+                    <li>Our e-mail:  <a href="mailto:mail@mail.com">mail@mail.com </a> </li>
+                    <li>Our phone number: 0123456789</li>
+                    <li>Our address: Nairobi city, Kenya.</li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>© 2023 Awesome books</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
