@@ -32,8 +32,8 @@ input {
 }
 
 button {
-  width: 50px;
-  background-color: #ffffff;
+  width: 30%;
+  background-color: #fff;
   color: black;
   border: solid 3px;
   border-color: black;
@@ -43,11 +43,6 @@ button {
 
 input:focus {
   outline: none;
-}
-
-button {
-  cursor: pointer;
-  width: 30%;
 }
 
 .book-plate {
@@ -104,7 +99,7 @@ h2 {
 }
 
 .delete-btn {
-  background-color: #ffffff;
+  background-color: #fff;
   color: black;
   border: solid 3px;
   border-color: black;
