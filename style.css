@@ -12,21 +12,33 @@ body {
 h1 {
   font-size: 40px;
   padding-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  padding: 10px;
-  gap: 10px;
+  align-items: flex-end;
+  margin-top: 10px;
+  max-width: 400px;
 }
 
-input,
+input {
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  border: solid 3px;
+}
+
 button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 50px;
+  background-color: #ffffff;
+  color: black;
+  border: solid 3px;
+  border-color: black;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 input:focus {
@@ -40,13 +52,62 @@ button {
 
 .book-plate {
   display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 10px;
-  gap: 10px;
-  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #fff;
 }
 
 .book-plate p {
   font-weight: bold;
+}
+
+.books {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+hr {
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  margin: 0 57% 0 43%;
+}
+
+.add-new-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+#add-form {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: solid 3px;
+}
+
+#titile {
+  margin-bottom: 3%;
+}
+
+#book-author {
+  margin-bottom: 3%;
+}
+
+.delete-btn {
+  background-color: #ffffff;
+  color: black;
+  border: solid 3px;
+  border-color: black;
+  padding: 5px 10px;
+  cursor: pointer;
 }
