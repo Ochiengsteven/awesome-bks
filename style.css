@@ -6,13 +6,13 @@
 }
 
 :root {
-  --dark: #000000;
+  --dark: #000;
   --black: #2d2d2a;
-  --gray: #4C4C47;
-  --blue: #848FA5;
-  --red: #C14953;
-  --pearl: #E5DCC5;
-  --white: #ECF0F1;
+  --gray: #4c4c47;
+  --blue: #848fa5;
+  --red: #c14953;
+  --pearl: #e5dcc5;
+  --white: #ecf0f1;
 }
 
 body {
@@ -175,6 +175,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+
   /* margin-top: 20vh; */
 }
 
