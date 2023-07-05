@@ -38,10 +38,6 @@
 ***Awesome books*** is a simple website that displays a list of books and allows you to add and remove books from that list. Main objective is to implement data management in JavaScript. 
 
 ## 🛠 Built With <a name="built-with"></a>
-- HTML.
-- CSS.
-- JavaScript
-- LINTERS.
 
 ### Tech Stack <a name="tech-stack"></a>
 
