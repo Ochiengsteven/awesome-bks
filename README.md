@@ -196,6 +196,6 @@ If you like this project, create a pull request or hit us up on [Pi](https://twi
 
 ## 📝 License <a name="license"></a>
 
-- This project is [MIT](./LICENSE) licensed. </br>
+- This project is [MIT](https://github.com/Ochiengsteven/awesome-bks/blob/complete-website-with-navigation/MIT.md) licensed. </br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
