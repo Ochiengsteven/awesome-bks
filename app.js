@@ -99,6 +99,7 @@ const bookCollection = new BookCollection();
 const homeLink = document.getElementById('home-link');
 const addLink = document.getElementById('add-link');
 const contactLink = document.getElementById('contact-link');
+const line = document.querySelector('hr');
 
 document.addEventListener('DOMContentLoaded', () => {
   homeLink.style.display = 'block';
@@ -116,10 +117,12 @@ const addClick = () => {
   homeLink.style.display = 'none';
   addLink.style.display = 'block';
   contactLink.style.display = 'none';
+  line.style.display = 'none';
 };
 
 const contactClick = () => {
   homeLink.style.display = 'none';
   addLink.style.display = 'none';
   contactLink.style.display = 'block';
+  line.style.display = 'none';
 };
