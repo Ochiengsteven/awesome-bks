@@ -38,10 +38,6 @@
 ***Awesome books*** is a simple website that displays a list of books and allows you to add and remove books from that list. Main objective is to implement data management in JavaScript. 
 
 ## 🛠 Built With <a name="built-with"></a>
-- HTML.
-- CSS.
-- JavaScript
-- LINTERS.
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -196,6 +192,6 @@ If you like this project, create a pull request or hit us up on [Pi](https://twi
 
 ## 📝 License <a name="license"></a>
 
-- This project is [MIT](./LICENSE) licensed. </br>
+- This project is [MIT](https://github.com/Ochiengsteven/awesome-bks/blob/complete-website-with-navigation/MIT.md) licensed. </br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
